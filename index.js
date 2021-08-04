@@ -143,10 +143,26 @@ function printFirstTwoNames(array) {
 //(let i = 0; i < numbers.length; i++)
 
 // Starting Code:
+// function squareEveryDigit(number) {
+//   number.toString().split('').map(number => number *number).join 
+//   console.log(squareEveryDigit())
+// }
+
 function squareEveryDigit(number) {
-  number.toString().split('').map(number => number *number).join 
-  console.log(squareEveryDigit())
-}
+
+  return Number( 
+    number.toString() // num === "555"
+  
+    .split('') // ["5", "5", "5"]
+  
+    .map(number => number * number) 
+                  // Now we have [25, 25, 25]
+  
+    .join('') // "252525"
+              );
+  }
+  
+  squareEveryDigit(946)
 
 squareEveryDigit(333)
 
