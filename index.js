@@ -151,15 +151,10 @@ function printFirstTwoNames(array) {
 function squareEveryDigit(number) {
 
   return Number( 
-    number.toString() // num === "555"
-  
-    .split('') // ["5", "5", "5"]
-  
+    number.toString()
+    .split('') 
     .map(number => number * number) 
-                  // Now we have [25, 25, 25]
-  
-    .join('') // "252525"
-              );
+   .join(''));
   }
   
   squareEveryDigit(946)
